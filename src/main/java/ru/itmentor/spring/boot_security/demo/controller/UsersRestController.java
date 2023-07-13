@@ -21,6 +21,7 @@ public class UsersRestController {
 
     @GetMapping()
     public User getUser(Principal principal){
+
         return userService.getUserByEmail(principal.getName());
     }
 }

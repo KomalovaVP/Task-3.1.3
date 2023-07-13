@@ -41,7 +41,7 @@ public class AdminRestController {
 
     @DeleteMapping("/{id}")
     public User deleteUser(@PathVariable("id") int id){
+
         return userService.deleteUser(id);
     }
-
 }
